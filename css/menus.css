@@ -1,0 +1,178 @@
+/* Estilos generales para el menú lateral */
+.menu {
+    background-color: #e5e0d8; /* Color de fondo suave */
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1); /* Sombra lateral */
+    width: 220px; /* Ancho del menú lateral */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-top: 130px; /* Asegura que no tenga margen superior */
+}
+
+/* Ocultar el contenido principal detrás del menú */
+body {
+    margin-left: 250px; /* Para evitar que el contenido principal quede cubierto */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block; /* Alineación en columna */
+    font-family: sans-serif;
+}
+
+.menu ul li {
+    position: relative;
+    margin-bottom: 10px; /* Espacio entre los elementos del menú */
+    font-family: sans-serif;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px; /* Aumentar el padding para el menú lateral */
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+}
+
+.menu ul li a:hover {
+    border-radius: 5px;
+}
+
+.menu ul li img.iconos {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.menu ul li h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: inherit; /* Mantener el color heredado */
+}
+
+/* Submenú */
+.menu ul li ul {
+    display: none; /* Ocultar por defecto */
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #99b2ca;
+    padding: 10px 0;
+    min-width: 200px;
+}
+
+.menu ul li.active ul {
+    display: block; /* Muestra el submenú cuando el padre tiene la clase "active" */
+}
+
+.menu ul li ul li {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    padding: 10px 20px;
+}
+
+.menu ul li ul li a {
+    margin-right: 30px;
+    color: #343a40;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+.menu ul li ul li img {
+    border-radius: 10px;
+    margin-right: 4px;
+}
+
+.menu ul li ul li a:hover {
+    border-radius: 0;
+}
+
+.menu ul li ul li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%; /* Menú lateral ocupa todo el ancho en pantallas pequeñas */
+        height: auto; /* Ajusta su altura */
+        margin-top: 150px;
+    }
+
+    body {
+        margin-left: 0; /* Elimina el margen lateral en pantallas pequeñas */
+    }
+
+    .menu ul {
+        display: flex; /* Para que los elementos del menú principal se alineen horizontalmente */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu ul li {
+        position: relative;
+    margin-left: 0px;
+    width: 40%;
+    height: 35px;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        color: #343a40;
+        font-weight: bold;
+        display: flex;
+        padding: 10px 15px;
+    
+    }
+    .menu ul li a h3{
+     font-size: 0.7rem;
+    
+    }
+    .menu ul li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none; /* Ocultamos el submenú por defecto */
+        background-color: #99b2ca;
+        list-style-type: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce la sombra del submenú */
+        padding: 2px 0; /* Reduce el padding del contenedor del submenú */
+    }
+    
+
+.menu ul li.active ul {
+    display: flex; /* Mostramos el submenú cuando tiene la clase "active" */
+    flex-direction: row; /* Alineamos los submenús de forma horizontal */
+}
+
+.menu ul li ul li {
+    padding: 2px 5px; /* Reduce el padding dentro de cada ítem del submenú */
+    font-size: 0.6rem; /* Reduce el tamaño del texto */
+}
+
+.menu ul li ul li img {
+    width: 15px; /* Ajusta el tamaño de las imágenes en el submenú */
+    height: 15px;
+    margin-right: 2px;
+}
+
+.menu ul li ul li a {
+    margin-right: 2px;
+    padding: 3px 5px; /* Reduce el padding del enlace */
+    white-space: nowrap; /* Evitar que los textos del submenú se quiebren en varias líneas */
+    font-size: 0.6rem; /* Reduce aún más el tamaño del texto de los enlaces */
+}
+
+}

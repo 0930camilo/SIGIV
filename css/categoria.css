@@ -1,0 +1,180 @@
+.form-container{
+    font-family: Arial, sans-serif; 
+}
+#formCategoria label{
+    font-size: 1.3rem;
+    }
+#formCategoria input{
+        font-size: 1rem;
+    }
+ #formCategoria button{
+        border: 1px solid #ccc; 
+        font-size: 1rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */   
+    }
+ #formCategoria button:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+.h1{
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif; 
+}
+.list-container{
+    margin-bottom: 10px;
+}
+.list-container h1{
+        font-size: 1.5rem;
+        font-family: Arial, sans-serif;     
+}
+.list-container label{
+    font-size: 1rem;
+    font-family: Arial, sans-serif; 
+}
+
+#buscarCategoriaBtn{
+    border: 1px solid #ccc; 
+    font-size: 1rem;
+    border-radius: 4px; /* Bordes redondeados */
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */ 
+}
+#buscarCategoriaBtn:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+/* Otras reglas de estilo ... */
+
+table th {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    position: sticky; /* Hacer que el encabezado sea pegajoso */
+    top: 0; /* Fijar el encabezado en la parte superior */
+    z-index: 0; /* Asegura que el encabezado esté por encima del contenido */
+}
+
+/* Otras reglas de estilo ... */
+
+.catego {
+    /* Contenedor de las categorías */
+    max-height: 340px; /* Limita la altura máxima del contenedor */
+    overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+  margin-top: 1%;
+}
+.categoria-tabla, .categoria-tabla th, .categoria-tabla td {
+    font-family: Arial, sans-serif; 
+    border: 1px solid #1a1919; /* Borde ajustado */
+    border-collapse: collapse; 
+    padding: 7; /* Sin espaciado interno en celdas */
+    font-size: 1.3rem;
+}
+.button-group {
+    display: flex; /* Alinea los botones en una fila */
+    justify-content: flex-start; /* Alinea los botones al principio */
+    gap: 20px; /* Espacio entre los botones */
+    font-family: Arial, sans-serif; 
+ margin-left: 5px;
+ margin-right: 5px;
+}
+.btn-accion {
+    padding: 5px 10px; /* Espaciado interno de los botones */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+.btn-editar {
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */
+}
+.btn-editar:hover {
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+.btn-eliminar {
+    background-color: #cf625f; /* Color rojo */
+    color: white; /* Texto blanco */
+}
+.btn-eliminar:hover {
+    background-color: #d89593; /* Tono más oscuro al hacer hover */
+}
+@media (max-width: 768px) {
+.container{
+    margin-top: 26%;
+    margin-left: 30px;
+}
+
+    .form-container{
+        font-family: Arial, sans-serif; 
+    }
+  .h1{
+        font-size: 1rem;
+        }
+    #formCategoria label{
+    font-size: 0.8rem;
+    }
+    #formCategoria input{
+        font-size: 0.7rem;
+    }
+    #formCategoria button{
+        border: 1px solid #ccc; 
+        font-size: 0.8rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */   
+        }
+    #formCategoria button:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    .list-container h1{
+        font-size: 1rem;
+    }
+    table th {
+        background-color: #333;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .catego {
+        /* Contenedor de las categorías */
+        max-height: 340px; /* Limita la altura máxima del contenedor */
+        overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+      
+    }
+    .categoria-tabla, .categoria-tabla th, .categoria-tabla td {
+       
+        font-family: Arial, sans-serif; 
+        border: 1px solid #1a1919; /* Borde ajustado */
+        border-collapse: collapse; 
+        padding: 7; /* Sin espaciado interno en celdas */
+        font-size: 0.9rem;
+    }
+    .button-group {
+        display: flex; /* Alinea los botones en una fila */
+        justify-content: flex-start; /* Alinea los botones al principio */
+        gap: 20px; /* Espacio entre los botones */
+        font-family: Arial, sans-serif; 
+     margin-left: 5px;
+     margin-right: 5px;
+    }
+    .btn-accion {
+        padding: 5px 10px; /* Espaciado interno de los botones */
+        border-radius: 4px; /* Bordes redondeados */
+        border: 1px solid #ccc; /* Borde gris claro */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-size:  0.9rem /* Tamaño de la fuente */
+    }
+    
+    .btn-editar {
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */
+    }
+    .btn-editar:hover {
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    .btn-eliminar {
+        background-color: #cf625f; /* Color rojo */
+        color: white; /* Texto blanco */
+    }
+    .btn-eliminar:hover {
+        background-color: #d89593; /* Tono más oscuro al hacer hover */
+    }
+}

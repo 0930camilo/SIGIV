@@ -1,0 +1,185 @@
+.form-container{
+    font-family: Arial, sans-serif; 
+}
+#formProveedor label{
+    font-size: 1.3rem;
+    }
+ #formProveedor input{
+        font-size: 1rem;
+}
+
+#formProveedor button{
+    border: 1px solid #ccc; 
+    font-size: 1rem;
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */   
+}
+#formProveedor button:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+
+
+
+table th {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    position: sticky; /* Hacer que el encabezado sea pegajoso */
+    top: 0; /* Fijar el encabezado en la parte superior */
+    z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+}
+
+
+.list-container h1{
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;     
+}
+.list-container label{
+    font-size: 1rem;
+    font-family: Arial, sans-serif; 
+}
+
+.list-container input{
+    font-size: 1rem;
+    font-family: Arial, sans-serif; 
+}
+
+#buscarProveedorBtn{
+    border: 1px solid #ccc; 
+    font-size: 1rem;
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */ 
+    border-radius: 4px; /* Bordes redondeados */
+
+}
+#buscarProveedorBtn:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+
+.prove{
+     /* Contenedor de las categorías */
+     max-height: 320px; /* Limita la altura máxima del contenedor */
+     overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+    margin-top: 1%;
+}
+
+
+.proveedor-tabla{
+    font-family: Arial, sans-serif; 
+    border: 1px solid #1a1919; /* Borde ajustado */
+    border-collapse: collapse; 
+    padding: 7; /* Sin espaciado interno en celdas */
+font-size: 1.6rem;
+}
+
+
+.editar{
+    padding: 5px 10px; /* Espaciado interno de los botones */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente */
+    background-color:#007bff; 
+    color: white; /* Texto blanco */
+}
+
+.editar:hover {
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+.eliminar {
+    padding: 5px 10px; /* Espaciado interno de los botones */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente */
+    background-color: #cf625f; /* Color rojo */
+    color: white; /* Texto blanco */
+}
+.beliminar:hover {
+    background-color: #d89593; /* Tono más oscuro al hacer hover */
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        margin-top: 26%;
+        margin-left: 30px;
+    }
+    .form-container h1{
+       
+        font-family: Arial, sans-serif; 
+    }
+    .h1{
+        font-size: 1rem;
+        }
+    #formProveedor label{
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+        }
+     #formProveedor input{
+            font-size: 0.7rem;
+            margin-bottom: 2px;
+
+    }
+    
+    #formProveedor button{
+        border: 0.8px solid #ccc; 
+        font-size: 1rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */   
+    }
+    #formProveedor button:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    
+    .list-container h1{
+        font-size: 1rem;
+    }
+    table th {
+        background-color: #333;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .prove{
+        max-height: 340px; /* Limita la altura máxima del contenedor */
+        overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+       
+    }
+   
+    .proveedor-tabla{
+        font-family: Arial, sans-serif; 
+        border: 1px solid #1a1919; /* Borde ajustado */
+        border-collapse: collapse; 
+        padding: 7; /* Sin espaciado interno en celdas */
+        font-size: 0.9rem;
+    }
+    
+    
+    .editar{
+        padding: 5px 10px; /* Espaciado interno de los botones */
+        border-radius: 4px; /* Bordes redondeados */
+        border: 1px solid #ccc; /* Borde gris claro */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-size:  0.7rem; /* Tamaño de la fuente */
+        background-color:#007bff; 
+        color: white; /* Texto blanco */
+
+    }
+    
+    .editar:hover {
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    .eliminar {
+        padding: 5px 10px; /* Espaciado interno de los botones */
+        border-radius: 4px; /* Bordes redondeados */
+        border: 1px solid #ccc; /* Borde gris claro */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-size:  0.7rem;  /* Tamaño de la fuente */
+        background-color: #cf625f; /* Color rojo */
+        color: white; /* Texto blanco */
+    }
+    .beliminar:hover {
+        background-color: #d89593; /* Tono más oscuro al hacer hover */
+    }
+    
+}

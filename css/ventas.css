@@ -1,0 +1,290 @@
+.container{
+    font-family: Arial, sans-serif; 
+}
+.ve{
+    display: flex;
+}
+.ven{
+    display: block;
+}
+.venta{
+    font-family: Arial, sans-serif; 
+    width: 50%;
+        
+}
+
+
+#registrar-venta-form{
+    display: inline-block
+}
+
+
+.venta label{
+    font-size: 1.3rem;
+}
+
+.venta input{
+    font-size: 1.3rem;
+    
+}
+
+
+#carrito-contenido{
+      
+  
+  width: 70%;
+}
+
+
+#filtro-categoria{
+    font-size: 1rem;
+    width: 22%;
+    height: 28px;
+    margin-bottom: 10px;
+}
+.btn-buscar{
+    border: 1px solid #ccc; 
+    font-size: 1rem;
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */
+    border-radius: 4px; /* Bordes redondeados */
+height: 26px;
+}
+.btn-buscar:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+
+}
+
+.buscar-nombre{
+    height: 22px;
+    width: 26%;
+}
+
+.lista{
+    font-family: Arial, sans-serif; 
+    margin-left: 10%; 
+ width: 100%;
+  
+ 
+}
+.list{
+    font-family: Arial, sans-serif; 
+   
+     width: 100%;
+     max-height: 400px; /* Limita la altura máxima del contenedor */
+     overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+   
+ 
+}
+
+.productos-table{
+    font-family: Arial, sans-serif; 
+    border: 1px solid #1a1919; /* Borde ajustado */
+    border-collapse: collapse; 
+    padding: 7; /* Sin espaciado interno en celdas */
+    font-size: 0.8rem;
+
+}
+
+
+
+table th {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    position: sticky; /* Hacer que el encabezado sea pegajoso */
+    top: 0; /* Fijar el encabezado en la parte superior */
+    z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+}
+
+
+
+.tablas{
+    font-family: Arial, sans-serif; 
+    border: 1px solid #1a1919; /* Borde ajustado */
+    border-collapse: collapse; 
+    padding: 7; /* Sin espaciado interno en celdas */
+    font-size: 1.4rem;
+}
+.agregar-producto-form input{
+    width: 60%;
+    font-size: 1rem;
+}
+.agregar-producto-form button{
+    font-size: 1rem;
+    border: 1px solid #ccc; 
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */ 
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.agregar-producto-form button:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .container{
+        font-family: Arial, sans-serif; 
+
+    }
+    .vent{
+        margin-top: 26%;
+        width: 100%;
+        display: block;
+        margin-left: 7px;
+    }
+    .ve{
+     display: block;
+    }
+    .venta{
+        font-family: Arial, sans-serif; 
+       
+     
+            
+    }
+    
+    .venta h1{
+        font-family: Arial, sans-serif; 
+        font-size: 0.8rem;
+       
+            
+    }
+    #registrar-venta-form{
+        display: inline-block
+    }
+    
+    
+    .venta label{
+        font-size: 0.8rem;
+    }
+    
+    .venta input{
+        font-size: 0.8rem;
+       margin-top: 5px;
+        width: 80%;
+        margin-left: 1px;
+    }
+
+   
+    .btng{
+        margin-top: 20px;
+        border: 1px solid #ccc; 
+        font-size: 0.8rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */  
+    }
+    .btng:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    
+    #carrito-contenido{
+          
+        max-height: 150px; /* Limita la altura máxima del contenedor */
+        overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+      width: 220%;
+    }
+    
+    
+    #filtro-categoria{
+        font-size: 0.7rem;
+        width: 35%;
+        height: 16px;
+        margin-bottom: 10px;
+        margin-top: 2px;
+    }
+    .lista{
+        font-family: Arial, sans-serif; 
+        margin-left: 1%; 
+      
+     
+    }
+    .lista input{
+        font-size: 0.7rem;
+        font-family: Arial, sans-serif; 
+        width: 35%;
+        height: 15px;
+        margin-top: 2px;
+    }
+
+  
+
+   
+
+    #btn-buscar{
+        border: 1px solid #ccc; 
+        font-size: 0.7rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */
+        border-radius: 4px; /* Bordes redondeados */
+
+    }
+    #btn-buscar:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+
+    .list{
+        font-family: Arial, sans-serif; 
+       
+         width: 120%;
+         max-height: 250px; /* Limita la altura máxima del contenedor */
+         overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+       
+     
+    }
+
+    .lista h2{
+        font-family: Arial, sans-serif; 
+        font-size: 1rem;
+    }
+    
+    .productos-table{
+        font-family: Arial, sans-serif; 
+        border: 1px solid #1a1919; /* Borde ajustado */
+        border-collapse: collapse; 
+        padding: 7; /* Sin espaciado interno en celdas */
+        font-size: 0.8rem;
+    
+    }
+    
+    
+    
+    table th {
+        background-color: #333; /* Color de fondo del encabezado */
+        color: white; /* Color del texto */
+        position: sticky; /* Hacer que el encabezado sea pegajoso */
+        top: 0; /* Fijar el encabezado en la parte superior */
+        z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+        font-size: 0.8rem;
+    }
+    
+    
+    
+    .tablas{
+        font-family: Arial, sans-serif; 
+        border: 1px solid #1a1919; /* Borde ajustado */
+        border-collapse: collapse; 
+        padding: 7; /* Sin espaciado interno en celdas */
+        font-size: 0.7rem;
+    }
+    .agregar-producto-form input{
+        width: 20%;
+        font-size: 0.7rem;
+    }
+    .agregar-producto-form button{
+        font-size: 0.7rem;
+        border: 1px solid #ccc; 
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */ 
+    }
+    
+    .agregar-producto-form button:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+
+
+
+}

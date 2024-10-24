@@ -1,0 +1,259 @@
+.form-container{
+    font-family: Arial, sans-serif; 
+}
+.h1{
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif; 
+    }
+#formProducto label{
+    font-size: 1.5rem;
+    margin-left: 5px;
+    }
+#formProducto input{
+        font-size: 1rem;
+        width: 13%;
+       
+    }
+
+#formProducto select{
+        font-size: 1.2rem;
+    }
+  
+#formProducto button{
+        border: 1px solid #ccc; 
+        font-size: 1.2rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */ 
+        border-radius: 4px; /* Bordes redondeados */
+  
+    }
+
+ #formProducto button:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+
+    label{
+        font-size: 1rem;
+        font-family: Arial, sans-serif;  
+    }
+
+    input{
+        font-size: 1rem;
+        font-family: Arial, sans-serif;  
+    }
+#btnBuscar{
+    border: 1px solid #ccc; 
+    font-size: 1.2rem;
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */ 
+    border-radius: 4px; /* Bordes redondeados */
+
+}
+#btnBuscar:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+.list-container{
+     /* Contenedor de las categorías */
+     max-height: 320px; /* Limita la altura máxima del contenedor */
+     overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+   
+}
+/* Otras reglas de estilo ... */
+
+table th {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    position: sticky; /* Hacer que el encabezado sea pegajoso */
+    top: 0; /* Fijar el encabezado en la parte superior */
+    z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+}
+
+/* Otras reglas de estilo ... */
+
+.fil{
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif; 
+}
+#categoriaFiltro{
+    font-family: Arial, sans-serif; 
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+
+.product{
+    font-family: Arial, sans-serif; 
+    border: 1px solid #1a1919; /* Borde ajustado */
+    border-collapse: collapse; 
+    padding: 7; /* Sin espaciado interno en celdas */
+font-size: 1.2rem;
+
+}
+.product th{
+    font-family: Arial, sans-serif; 
+    border: 1px solid #1a1919; /* Borde ajustado */
+    border-collapse: collapse; 
+    padding: 7; /* Sin espaciado interno en celdas */
+font-size: 1.2rem;
+}
+.date{
+    max-height: 320px; /* Limita la altura máxima del contenedor */
+    overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+}
+.product td{
+    font-family: Arial, sans-serif; 
+    border: 1px solid #1a1919; /* Borde ajustado */
+    border-collapse: collapse; 
+    padding: 7; /* Sin espaciado interno en celdas */
+font-size: 1.2rem;
+}
+
+.btn-editar {
+    padding: 5px 10px; /* Espaciado interno de los botones */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente */
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */
+}
+.btn-editar:hover {
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+.btn-eliminar {
+    padding: 5px 10px; /* Espaciado interno de los botones */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente */
+    background-color: #cf625f; /* Color rojo */
+    color: white; /* Texto blanco */
+}
+.btn-eliminar:hover {
+    background-color: #d89593; /* Tono más oscuro al hacer hover */
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        margin-top: 26%;
+        margin-left: 30px;
+    
+}
+
+    .form-container{
+        font-family: Arial, sans-serif; 
+       
+    }
+   
+    .h1{
+        font-size: 1rem;
+        }
+    #formProducto label{
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+
+        }
+    #formProducto input{
+           
+            width: 18%;
+            font-size: 0.8rem;
+            margin-bottom: 2px;
+            margin-left: 20px;
+        }
+.num{
+           height: 20px;
+            width: 10%;
+            font-size: 0.8rem;
+            margin-bottom: 2px;
+            margin-left: 1px;
+        }
+
+
+    #formProducto select{
+            font-size: 0.6rem;
+            margin-top: 8px;
+            margin-left: 2px;
+        }
+      
+    #formProducto button{
+            border: 1px solid #ccc; 
+            font-size: 1rem;
+            background-color:#007bff; /* Color verde */
+            color: white; /* Texto blanco */   
+        }
+    
+     #formProducto button:hover{
+            background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+        }
+    
+    
+    .list-container{
+         /* Contenedor de las categorías */
+         max-height: 380px; /* Limita la altura máxima del contenedor */
+         overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+       
+    }
+    table th {
+        background-color: #333;
+        color: white;
+        font-weight: bold;
+    }
+    .fil{
+        font-size: 1rem;
+    }
+    #categoriaFiltro{
+        font-size: 1rem;
+    }
+    
+    .product{
+        font-family: Arial, sans-serif; 
+        border: 1px solid #1a1919; /* Borde ajustado */
+        border-collapse: collapse; 
+        padding: 7; /* Sin espaciado interno en celdas */
+        font-size: 0.8rem;
+    
+    }
+    .product th{
+        font-family: Arial, sans-serif; 
+        border: 1px solid #1a1919; /* Borde ajustado */
+        border-collapse: collapse; 
+        padding: 7; /* Sin espaciado interno en celdas */
+    font-size: 0.8rem;
+    }
+    .product td{
+        font-family: Arial, sans-serif; 
+        border: 1px solid #1a1919; /* Borde ajustado */
+        border-collapse: collapse; 
+        padding: 7; /* Sin espaciado interno en celdas */
+    font-size: 0.8rem;
+    }
+    
+    .btn-editar {
+        padding: 5px 10px; /* Espaciado interno de los botones */
+        border-radius: 4px; /* Bordes redondeados */
+        border: 1px solid #ccc; /* Borde gris claro */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-size: 0.7rem; /* Tamaño de la fuente */
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */
+    }
+    .btn-editar:hover {
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    .btn-eliminar {
+        padding: 5px 10px; /* Espaciado interno de los botones */
+        border-radius: 4px; /* Bordes redondeados */
+        border: 1px solid #ccc; /* Borde gris claro */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-size: 0.7rem; /* Tamaño de la fuente */
+        background-color: #cf625f; /* Color rojo */
+        color: white; /* Texto blanco */
+    }
+    .btn-eliminar:hover {
+        background-color: #d89593; /* Tono más oscuro al hacer hover */
+    }
+
+
+
+
+}

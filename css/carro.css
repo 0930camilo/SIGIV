@@ -1,0 +1,118 @@
+#registrar-venta-form label{
+    font-size: 1.5rem;
+    
+    }
+    
+    #registrar-venta-form input{
+        height: 15px;
+         width: 40%;
+         font-size: 1rem;
+    }
+    
+    /* Otras reglas de estilo ... */
+    .carros{
+        max-height: 250px; /* Limita la altura máxima del contenedor */
+        overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+      margin-top: 1%;
+      width: 144%;
+    }
+    table th {
+        background-color: #333; /* Color de fondo del encabezado */
+        color: white; /* Color del texto */
+        position: sticky; /* Hacer que el encabezado sea pegajoso */
+        top: 0; /* Fijar el encabezado en la parte superior */
+        z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+    }
+    .btng{
+        margin-top: 10px;
+        border: 1px solid #ccc; 
+        font-size: 1rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */  
+        border-radius: 4px; /* Bordes redondeados */
+    }
+    .btng:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    /* Otras reglas de estilo ... */
+    
+    
+    .eliminar-producto-form button{
+        padding: 5px 10px; /* Espaciado interno de los botones */
+            border-radius: 4px; /* Bordes redondeados */
+            border: 1px solid #ccc; /* Borde gris claro */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            font-size: 0.7rem; /* Tamaño de la fuente */
+            background-color: #cf625f; /* Color rojo */
+            color: white; /* Texto blanco */
+    }
+    
+    .eliminar-producto-form button:hover {
+        background-color: #d89593; /* Tono más oscuro al hacer hover */
+    }
+    
+    @media (max-width: 768px) {
+    
+    #registrar-venta-form label{
+            font-size: 0.7rem;
+            
+            }
+            
+     #registrar-venta-form input{
+               
+                 font-size: 0.7rem;
+                 width: 20%;
+                 height: 10px;
+            }
+
+     .btng{
+                margin-top: 10px;
+                border: 1px solid #ccc; 
+                font-size: 0.7rem;
+                background-color:#007bff; /* Color verde */
+                color: white; /* Texto blanco */  
+                border-radius: 4px; /* Bordes redondeados */
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+            .carros{
+                max-height: 70px; /* Limita la altura máxima del contenedor */
+                overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+              margin-top: 1%;
+              width: 144%;
+            }
+
+    table th {
+        background-color: #333; /* Color de fondo del encabezado */
+        color: white; /* Color del texto */
+        position: sticky; /* Hacer que el encabezado sea pegajoso */
+        top: 0; /* Fijar el encabezado en la parte superior */
+        z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+        font-size: 0.7rem;
+    }
+    
+    .td{
+        font-size: 0.7rem;
+    }
+    /* Otras reglas de estilo ... */
+    
+    
+    .eliminar-producto-form button{
+        padding: 5px 10px; /* Espaciado interno de los botones */
+            border-radius: 4px; /* Bordes redondeados */
+            border: 1px solid #ccc; /* Borde gris claro */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            font-size: 0.7rem; /* Tamaño de la fuente */
+            background-color: #cf625f; /* Color rojo */
+            color: white; /* Texto blanco */
+            border-radius: 4px; /* Bordes redondeados */
+    
+    }
+    
+    .eliminar-producto-form button:hover {
+        background-color: #d89593; /* Tono más oscuro al hacer hover */
+    }
+    }
+    

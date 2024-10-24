@@ -1,0 +1,268 @@
+.container{
+    font-family: Arial, sans-serif; 
+}
+.facturas{
+    display: flex;
+    font-family: Arial, sans-serif; 
+}
+
+.factur{
+    font-family: Arial, sans-serif; 
+    display: flex;
+}
+.buscar{
+    font-family: Arial, sans-serif; 
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.buscar label{
+    font-family: Arial, sans-serif; 
+}
+
+.btn{
+  
+   
+    margin-top: 5px;
+    border: 1px solid #ccc; 
+    font-size: 1rem;
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */ 
+    border-radius: 4px; /* Bordes redondeados */
+
+}
+
+.btn:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+
+.factu{
+    width: 100%;
+}
+.verFactu{
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.calcu{
+    margin-left: 50px;
+
+}
+.fechas{
+    display: flex;
+}
+.fin{
+    margin-left: 30px;
+}
+.fechas input{
+    font-size: 0.9rem;
+}
+.btnCalcu{
+    width: 170px;
+    height: 30px; 
+    margin-top: 5px;
+    border: 1px solid #ccc; 
+    font-size: 1rem;
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */ 
+    font-family: Arial, sans-serif; 
+    border-radius: 4px; /* Bordes redondeados */
+}
+.btnCalcu:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+
+#sumatoria-result {
+font-size: 24px;
+font-family: 'Jost', sans-serif;
+}
+
+.fa{
+    display: flex;
+    max-height: 400px; /* Limita la altura máxima del contenedor */
+    overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+}
+table th {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    position: sticky; /* Hacer que el encabezado sea pegajoso */
+    top: 0; /* Fijar el encabezado en la parte superior */
+    z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+}
+#ventas-tbody{
+font-family: Arial, sans-serif; 
+}
+#factura-id-result{
+font-family: Arial, sans-serif; 
+
+}
+.ver-factura-btn{
+    margin-top: 20px;
+    border: 1px solid #ccc; 
+    font-size: 1rem;
+    background-color:#007bff; /* Color verde */
+    color: white; /* Texto blanco */ 
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.ver-factura-btn:hover{
+    background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+}
+.verFactu{
+    width: 40%;
+}
+
+.nav-btn {
+    background-color: #007bff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family:sans-serif;
+    margin-bottom: 19px;
+    margin-top: 10px;
+    display: flex; 
+    justify-content: center; /* Centra horizontalmente el texto */
+    align-items: center; /* Centra verticalmente el texto */
+    text-align: center; /* Asegura que el texto esté alineado al centro */
+    
+}
+
+@media (max-width: 768px) {
+    #content{
+        font-family: Arial, sans-serif; 
+        
+    }
+
+    .todo{
+        margin-top: 20px;
+    }
+    .facturas{
+        display: block;
+        font-family: Arial, sans-serif; 
+        margin-top: 90px;
+    }
+    
+    .facturas h2{
+       font-size: 1rem;
+    }
+
+    .factur{
+        font-family: Arial, sans-serif; 
+        display: flex;
+    }
+  
+    #id_venta{
+        width: 50%;
+        margin-top: 6px;
+    }
+    .buscar{
+        font-family: Arial, sans-serif; 
+        width: 150px;
+        display: block;
+        margin-bottom: 10px;
+        
+    }
+    .buscar label{
+        font-family: Arial, sans-serif; 
+    }
+    
+   
+    
+    .btn:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    
+    .factu{
+        width: 100%;
+    }
+    .verFactu{
+      margin-top: 60px;
+      margin-left: 50px;
+    }
+    
+    .calcu{
+        margin-left: 10px;
+    
+    }
+    .fechas{
+        display: block;
+        margin-top: 1px;
+    }
+    .fin{
+        margin-left: 20px;
+        display: flex;
+        margin-top: 2px;
+    }
+    .fin label{
+       margin-left: 0px;
+    }
+    .fechas input{
+        font-size: 0.8rem;
+        margin-left: 2px;
+    }
+    .btnCalcu{
+        width: 120px;
+       height: 20px;
+        margin-top: 5px;
+        border: 1px solid #ccc; 
+        font-size: 0.8rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */ 
+        font-family: Arial, sans-serif; 
+        border-radius: 4px; /* Bordes redondeados */
+        margin-left: 50px;
+    }
+    .btnCalcu:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    #sumatoria-result {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    }
+    
+    .fa{
+        display: flex;
+        max-height: 400px; /* Limita la altura máxima del contenedor */
+        overflow-y: auto; /* Añade scroll si el contenido excede la altura */
+    }
+    table th {
+        font-family: Arial, sans-serif;
+        background-color: #333; /* Color de fondo del encabezado */
+        color: white; /* Color del texto */
+        position: sticky; /* Hacer que el encabezado sea pegajoso */
+        top: 0; /* Fijar el encabezado en la parte superior */
+        z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+        font-size: 0.9rem;
+    }
+    #ventas-tbody{
+    font-family: Arial, sans-serif; 
+    }
+    #factura-id-result{
+    font-family: Arial, sans-serif; 
+    
+    }
+    .ver-factura-btn{
+        margin-top: 0px;
+        border: 1px solid #ccc; 
+        font-size: 0.8rem;
+        background-color:#007bff; /* Color verde */
+        color: white; /* Texto blanco */ 
+        border-radius: 4px; /* Bordes redondeados */
+    }
+    
+    .ver-factura-btn:hover{
+        background-color: #6a97c7; /* Tono más oscuro al hacer hover */
+    }
+    .verFactu{
+        width: 40%;
+    }
+    .descargar{
+        font-size: 0.8rem;
+    }
+}
