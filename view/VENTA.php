@@ -63,6 +63,7 @@ $productos = listarProductos(); // Obtener productos disponibles
     <table border="1" id="productos-table">
         <thead class="tabla" >
             <tr>
+                <th >id</th>
                 <th >Nombre</th>
                 <th>Descripción</th>
                 <th>Precio</th>
@@ -110,6 +111,7 @@ $(document).ready(function() {
                     // Usar template literals (``) en lugar de concatenar con '+'
                     tableBody.append(`
                         <tr>
+                           <td>${producto.idproducto}</td>
                             <td>${producto.nombre}</td>
                             <td>${producto.descripcion}</td>
                             <td>${producto.precio}</td>
@@ -203,7 +205,7 @@ $('#buscar-nombre').on('keypress', function(e) {
                     response.productos.forEach(function(producto) {
     tableBody.append(
         `<tr class="tablas">
-
+   <td>${producto.idproducto}</td>
     <td>${producto.nombre}</td>
     <td>${producto.descripcion}</td>
     <td>$${producto.precio}</td>

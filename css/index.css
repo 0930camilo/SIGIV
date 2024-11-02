@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+    padding-top: 80px;
     font-family: sans-serif;
     background-color: #f8f9fa;
     color: #333;
@@ -8,16 +9,17 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
 .navbar {
     background-color: #e5d2b8 !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
+    top: 0; /* Asegura que esté en la parte superior */
     width: 100%;
     z-index: 1000;
     padding: 15px 0; /* Mayor padding para más espacio */
     opacity: 1;
 }
+
 
 /* Navbar brand */
 .navbar-brand {
@@ -30,7 +32,16 @@ body {
 .navbar-brand:hover {
     color: #0056b3;
 }
-
+.what{
+    border-radius: 28px;
+   
+   
+}
+.nav-item{
+    margin-top: 15px;
+     margin-bottom: 10px; 
+     margin-left: 20px;
+}
 /* Navbar nav item */
 .navbar-nav .nav-item {
     margin-left: 25px; /* Mayor separación entre elementos */
@@ -41,6 +52,7 @@ body {
     border-radius: 50px;
     padding: 12px 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    
 }
 
 /* Botón primary */
@@ -65,6 +77,8 @@ body {
     color: rgb(8, 8, 8);
     padding: 150px 50px; /* Mayor padding para más espacio vertical y horizontal */
     text-align: left;
+    margin-bottom: 20px;
+    height: 650px;
 }
 
 #hero h3 {
@@ -104,30 +118,30 @@ body {
 /* Sección de llamada a la acción */
 .call-to-action {
     background-color: #f0f0f0;
-    padding: 60px; /* Más padding para aumentar el tamaño de la sección */
-    margin-bottom: 50px; /* Más espacio entre la sección */
+
+  
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.call-to-action h2 {
+.call-to-action h4 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.7rem;
+    font-size: 2rem;
     color: #007bff;
     margin-bottom: 25px; /* Mayor margen inferior */
 }
 
 .call-to-action h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1,4rem;
     color: #333;
     margin-bottom: 20px; /* Mayor margen inferior */
 }
 
 .call-to-action p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.7;
-    margin-bottom: 20px; /* Mayor margen inferior */
+ 
 }
 
 /* Footer */
@@ -147,3 +161,56 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+
+.collapse navbar-collapse{
+    display: flex;
+}
+.navbar-nav {
+    flex-direction: row !important; /* Alinea los elementos en una fila */
+    justify-content: center; /* Centra los elementos en la fila */
+    width: 100%;
+}
+.navbar-nav .nav-item{
+margin-left:30px;
+margin-right: 10px;
+
+}     
+.navbar-brand, .navbar img.log {
+            font-size: 1.2rem;
+            height: 50px;
+            margin: 0 10px;
+        }
+
+.nav-item{
+    width: 100px;
+  
+    
+}
+.btn-primary {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+}
+.mx-auto{
+        width: 100%;
+}
+   
+#hero {
+        width: 100%;
+}
+#hero h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem; /* Tamaño de fuente aumentado para mayor impacto */
+        margin-bottom: 25px; /* Mayor margen inferior */
+        color: rgb(8, 8, 8);
+}
+
+#hero .lead {
+        font-size: 0.9rem;
+        margin-bottom: 35px; /* Más margen inferior para separar texto */
+}
+
+    }
+    

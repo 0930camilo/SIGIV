@@ -135,7 +135,7 @@ table th {
     }
     .catego {
         /* Contenedor de las categorías */
-        max-height: 340px; /* Limita la altura máxima del contenedor */
+        max-height: 320px; /* Limita la altura máxima del contenedor */
         overflow-y: auto; /* Añade scroll si el contenido excede la altura */
       
     }

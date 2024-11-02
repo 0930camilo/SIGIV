@@ -123,11 +123,16 @@ function cargarVentas() {
                 var html = '';
                 $.each(ventas, function(index, venta) {
                     html += '<tr>';
-                    html += '<td>' + venta.idventa + '</td>';
-                    html += '<td>' + venta.fecha + '</td>';
-                    html += '<td>$' + venta.total + '</td>';
-                    html += '<td><button class="ver-factura-btn" data-venta-id="' + venta.idventa + '">Ver Factura</button> <a href="../controller/facturaControlador.php?venta_id=' + venta.idventa + '" target="_blank">Descargar Factura (PDF)</a></td>';
-                    html += '</tr>';
+html += '<td>' + venta.idventa + '</td>';
+html += '<td>' + venta.fecha + '</td>';
+html += '<td>$' + venta.total + '</td>';
+html += '<td>';
+html += '<button class="ver-factura-btn" data-venta-id="' + venta.idventa + '">Ver Factura</button> ';
+html += '<a href="../controller/facturaControlador.php?venta_id=' + venta.idventa + '" target="_blank">Descargar Factura (PDF)</a> ';
+html += '<button class="devolucion-btn" data-venta-id="' + venta.idventa + '">Editar Cantidad para Devolución</button>';
+html += '</td>';
+html += '</tr>';
+
                 });
                 $('#ventas-tbody').html(html);
             } else {
@@ -165,7 +170,11 @@ function cargarVentas() {
                             html += '<td>' + venta.idventa + '</td>';
                             html += '<td>' + venta.fecha + '</td>';
                             html += '<td>$' + venta.total + '</td>';
-                            html += '<td><button class="ver-factura-btn" data-venta-id="' + venta.idventa + '">Ver Factura</button> <a class="descargar" href="../controller/facturaControlador.php?venta_id=' + venta.idventa + '" target="_blank">Descargar Factura (PDF)</a></td>';
+                            html += '<td>';
+html += '<button class="ver-factura-btn" data-venta-id="' + venta.idventa + '">Ver Factura</button> ';
+html += '<a href="../controller/facturaControlador.php?venta_id=' + venta.idventa + '" target="_blank">Descargar Factura (PDF)</a> ';
+html += '<button class="devolucion-btn" data-venta-id="' + venta.idventa + '">Editar Cantidad para Devolución</button>';
+html += '</td>';
                             html += '</tr>';
                         });
                         $('#ventas-tbody').html(html);
@@ -240,6 +249,47 @@ $(document).on('click', '.ver-factura-btn', function() {
             $('#factura-id-result').html('<p>Ocurrió un error al cargar la factura.</p>');
         }
     });
+});
+
+
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('devolucion-btn')) {
+        event.stopPropagation(); // Evitar que el evento se propague
+
+        const ventaId = event.target.getAttribute('data-venta-id');
+        const productoId = prompt("Ingrese el ID del producto para devolución:");
+
+        // Validar el ID del producto
+        if (!productoId) {
+            alert("El ID del producto es necesario para continuar con la devolución.");
+            return;
+        }
+
+        const nuevaCantidad = prompt("Ingrese la nueva cantidad para devolución:");
+
+        // Validar la cantidad
+        if (!nuevaCantidad) {
+            alert("La cantidad es necesaria para continuar con la devolución.");
+            return;
+        }
+
+        // Ejecutar el fetch solo después de obtener ambos valores
+        fetch('../controller/devolucionControlador.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `accion=devolucion&venta_id=${ventaId}&producto_id=${productoId}&cantidad=${nuevaCantidad}`
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert(data.success);
+                location.reload(); // Recargar para mostrar cambios
+            } else {
+                alert(data.error);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
 });
 
 });

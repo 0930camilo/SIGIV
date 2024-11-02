@@ -68,6 +68,7 @@ if (isset($_POST['registrar_venta'])) {
         <table class="carr" border="1">
             <thead class="carr">
                 <tr>
+                    <th>id</th>
                     <th>Producto</th>
                     <th>Descripción</th>
                     <th>Cantidad</th>
@@ -79,6 +80,7 @@ if (isset($_POST['registrar_venta'])) {
             <tbody>
                 <?php foreach ($_SESSION['carrito'] as $index => $item): ?>
                     <tr>
+                    <td class="td"><?= htmlspecialchars($item['idproducto']) ?></td>
                         <td class="td"><?= htmlspecialchars($item['nombre']) ?></td>
                         <td class="td"><?= htmlspecialchars($item['descripcion']) ?></td>
                         <td class="td"><?= htmlspecialchars($item['cantidad']) ?></td>

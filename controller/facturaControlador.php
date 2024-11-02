@@ -32,9 +32,10 @@ function obtenerDetallesVenta($conn, $venta_id, $usuario_id) {
     $venta = $stmt->get_result()->fetch_assoc();
 
     if ($venta) {
-        $sql_detalle = "SELECT d.*, p.nombre FROM detalle_ventas d 
-                        JOIN producto p ON d.producto_idproducto = p.idproducto 
-                        WHERE d.venta_idventa = ?";
+        $sql_detalle = "SELECT d.*, p.nombre, p.idproducto FROM detalle_ventas d 
+        JOIN producto p ON d.producto_idproducto = p.idproducto 
+        WHERE d.venta_idventa = ?";
+
         $stmt_detalle = $conn->prepare($sql_detalle);
         $stmt_detalle->bind_param("i", $venta_id);
         $stmt_detalle->execute();
@@ -90,9 +91,10 @@ $margenIzquierdo = ($anchoPagina - $anchoTotalTabla) / 2;
 // Encabezado de la tabla
 $pdf->SetFont('Courier', 'B', 10); // Tamaño de fuente más pequeño para el encabezado
 $pdf->SetX($margenIzquierdo);
-$pdf->Cell(30, 7, 'Producto', 1, 0, 'C');
+$pdf->Cell(15, 7, 'id', 1, 0, 'C');
+$pdf->Cell(20, 7, 'Producto', 1, 0, 'C');
 $pdf->Cell(20, 7, 'Cantidad', 1, 0, 'C');
-$pdf->Cell(25, 7, 'Precio', 1, 0, 'C');
+$pdf->Cell(20, 7, 'Precio', 1, 0, 'C');
 $pdf->Cell(30, 7, 'Subtotal', 1, 0, 'C');
 $pdf->Ln(); // Nueva línea después del encabezado
 
@@ -100,9 +102,10 @@ $pdf->Ln(); // Nueva línea después del encabezado
 $pdf->SetFont('Courier', '', 10); // Tamaño de fuente más pequeño para el contenido
 foreach ($detalles as $detalle) {
     $pdf->SetX($margenIzquierdo); // Centrar cada fila
-    $pdf->Cell(30, 6, $detalle['nombre'], 1, 0, 'C');
+    $pdf->Cell(15, 6, $detalle['idproducto'], 1, 0, 'C');
+    $pdf->Cell(20, 6, $detalle['nombre'], 1, 0, 'C');
     $pdf->Cell(20, 6, $detalle['cantidad'], 1, 0, 'C');
-    $pdf->Cell(25, 6, '$' . number_format($detalle['precio'], 0), 1, 0, 'R');
+    $pdf->Cell(20, 6, '$' . number_format($detalle['precio'], 0), 1, 0, 'R');
     $pdf->Cell(30, 6, '$' . number_format($detalle['subtotal'], 0), 1, 0, 'R');
     $pdf->Ln(); // Nueva línea para el siguiente producto
 }
@@ -207,10 +210,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $html .= '<p>Fecha: ' . $venta['fecha'] . '</p>';
          
             
-            $html .= '<table border="1"><tr><th>Producto</th><th>Cantidad</th><th>Precio</th><th>Subtotal</th></tr>';
+            $html .= '<table border="1"><tr>
+             <th>id producto</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+            </tr>';
 
             foreach ($detalles as $detalle) {
                 $html .= '<tr>';
+                $html .= '<td>' . htmlspecialchars($detalle['idproducto']) . '</td>';
                 $html .= '<td>' . htmlspecialchars($detalle['nombre']) . '</td>';
                 $html .= '<td>' . htmlspecialchars($detalle['cantidad']) . '</td>';
                 $html .= '<td>$' . number_format($detalle['precio'], 0) . '</td>';

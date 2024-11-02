@@ -23,7 +23,8 @@ $ventas = obtenerVentas($usuario_id);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index de Formularios</title>
+    <link rel="icon" href="../img//tienda2.gif" type="image/gif">
+    <title>TIENDA</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/menus.css">
     <link rel="stylesheet" href="../css/contenido.css">

@@ -8,7 +8,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/log.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="icon" href="./img/logi.png" type="image/png">
     <title>Inicio de Sesión Admin</title>
 </head>
 <body>
