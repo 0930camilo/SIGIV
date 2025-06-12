@@ -1,0 +1,39 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.perfil {
+    max-width: 900px;
+    margin: 80px auto 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-info p {
+    font-size: 1.1rem;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+    .perfil {
+        margin: 100px 15px 30px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

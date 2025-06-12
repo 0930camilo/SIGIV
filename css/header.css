@@ -1,0 +1,82 @@
+/* Estilo general del logo en la navbar */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.navbar-brand img {
+    width: 50px;
+    max-width: 100%;
+    margin-right: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.navbar-brand div {
+    line-height: 1;
+}
+
+/* Fecha actual en navbar */
+#fecha-actual {
+    color: white;
+    margin-left: 1rem;
+    white-space: nowrap;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Total vendido */
+#total-vendido {
+    color: #218838; /* tono más oscuro del text-success */
+    font-weight: 600;
+}
+
+/* Botón de cerrar sesión */
+.btn-danger {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-danger img {
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+/* Ajuste del contenido derecho de la navbar */
+.navbar .d-flex.align-items-center.gap-3 {
+    gap: 1rem;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 991.98px) {
+    .navbar {
+        font-size: 0.65rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        margin-bottom: 0.5rem;
+    }
+
+    #fecha-actual {
+        margin: 0.5rem 0;
+    }
+
+    .navbar .d-flex.align-items-center.gap-3 {
+        flex-wrap: wrap; /* Permite ajuste sin apilar verticalmente */
+        justify-content: space-between;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .navbar .btn-danger {
+        justify-content: center;
+    }
+}

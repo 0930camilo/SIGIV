@@ -1,0 +1,36 @@
+.scroll-area {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.fixed-header-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fixed-header-table thead {
+    position: sticky;
+    top: 0;
+    background-color: #212529;
+    color: white;
+    z-index: 2;
+}
+
+.form-fixed {
+    position: sticky;
+    top: 20px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 576px) {
+    .form-fixed {
+        position: relative;
+        top: auto;
+        margin-bottom: 15px;
+    }
+
+    .scroll-area {
+        max-height: none;
+        overflow-x: auto;
+    }
+}

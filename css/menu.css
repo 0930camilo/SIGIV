@@ -1,0 +1,77 @@
+/* Sidebar fija */
+.sidebar {
+    position: fixed;
+    top: 10%; /* Ajustable si el header cambia */
+    left: 0;
+    bottom: 0;
+    width: 180px;
+    background-color: #fff;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    z-index: 1000;
+
+    transition: left 0.3s ease;
+}
+
+/* Espaciado para los elementos del menú */
+.list-group {
+    margin-top: 1rem;
+}
+
+/* Íconos del menú */
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+/* Animación al hacer hover */
+.nav-link:hover .menu-icon {
+    animation: bounce 0.5s ease;
+    transform: scale(1.1);
+}
+
+/* Efecto bounce (puedes ajustar los keyframes) */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px;
+        top: 20%;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+  #toggleSidebarBtn {
+        display: block;
+        position: fixed;
+        top: 18%;
+        left: 1rem;
+        z-index: 1101; /* más alto que el de la sidebar */
+        background-color: #9fb6cd;
+        color: white;
+        border: none;
+        border-radius: 4px;
+       
+        font-size: 1.2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Ocultar botón en pantallas grandes */
+@media (min-width: 769px) {
+    #toggleSidebarBtn {
+        display: none;
+    }
+}

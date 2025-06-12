@@ -1,0 +1,216 @@
+/* Estilos generales */
+body {
+    padding-top: 80px;
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #e5d2b8 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0; /* Asegura que esté en la parte superior */
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0; /* Mayor padding para más espacio */
+    opacity: 1;
+}
+
+
+/* Navbar brand */
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    color: #007bff;
+    font-size: 2rem; /* Tamaño del texto incrementado */
+    margin-left: 20px; /* Margen izquierdo añadido */
+}
+
+.navbar-brand:hover {
+    color: #0056b3;
+}
+.what{
+    border-radius: 28px;
+   
+   
+}
+.nav-item{
+    margin-top: 15px;
+     margin-bottom: 10px; 
+     margin-left: 20px;
+}
+/* Navbar nav item */
+.navbar-nav .nav-item {
+    margin-left: 25px; /* Mayor separación entre elementos */
+}
+
+.nav-item .btn {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+    padding: 12px 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+/* Botón primary */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.navbar img.log {
+    height: 70px;
+    margin-right: 25px; /* Margen derecho incrementado */
+}
+
+/* Hero Section */
+#hero {
+    background-color: #e5e0d8;
+    color: rgb(8, 8, 8);
+    padding: 150px 50px; /* Mayor padding para más espacio vertical y horizontal */
+    text-align: left;
+    margin-bottom: 20px;
+    height: 650px;
+}
+
+#hero h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem; /* Tamaño de fuente aumentado para mayor impacto */
+    margin-bottom: 25px; /* Mayor margen inferior */
+    color: rgb(8, 8, 8);
+}
+
+#hero .lead {
+    font-size: 1.3rem;
+    margin-bottom: 35px; /* Más margen inferior para separar texto */
+}
+
+#hero img {
+    border-radius: 10px;
+    width: 560px;
+    height: 350px; /* Imagen más grande para mayor visibilidad */
+  
+    margin-top: 20px; /* Añadido margen superior */
+}
+
+/* Botón primary en hero */
+#hero .btn-primary {
+    background-color: #007bff;
+    color: #f5f8fa;
+    padding: 15px 35px; /* Más grande para mejor visibilidad */
+    font-size: 1.3rem;
+}
+
+#hero .btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Sección de llamada a la acción */
+.call-to-action {
+    background-color: #f0f0f0;
+
+  
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 25px; /* Mayor margen inferior */
+}
+
+.call-to-action h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1,4rem;
+    color: #333;
+    margin-bottom: 20px; /* Mayor margen inferior */
+}
+
+.call-to-action p {
+    font-size: 1rem;
+    line-height: 1.7;
+ 
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px; /* Mayor padding */
+    margin-top: 50px; /* Más margen superior para separar del contenido */
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+.collapse navbar-collapse{
+    display: flex;
+}
+.navbar-nav {
+    flex-direction: row !important; /* Alinea los elementos en una fila */
+    justify-content: center; /* Centra los elementos en la fila */
+    width: 100%;
+}
+.navbar-nav .nav-item{
+margin-left:30px;
+margin-right: 10px;
+
+}     
+.navbar-brand, .navbar img.log {
+            font-size: 1.2rem;
+            height: 50px;
+            margin: 0 10px;
+        }
+
+.nav-item{
+    width: 100px;
+  
+    
+}
+.btn-primary {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+}
+.mx-auto{
+        width: 100%;
+}
+   
+#hero {
+        width: 100%;
+}
+#hero h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem; /* Tamaño de fuente aumentado para mayor impacto */
+        margin-bottom: 25px; /* Mayor margen inferior */
+        color: rgb(8, 8, 8);
+}
+
+#hero .lead {
+        font-size: 0.9rem;
+        margin-bottom: 35px; /* Más margen inferior para separar texto */
+}
+
+    }
+    
